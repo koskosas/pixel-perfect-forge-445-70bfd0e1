@@ -4,8 +4,8 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Villa Solaris — Private Beachfront Estate, Halkidiki" },
-      { name: "description", content: "Villa Solaris — a private beachfront estate in Halkidiki." },
+      { title: "Villa Varellia — Private Beachfront Estate, Kallithea, Halkidiki" },
+      { name: "description", content: "Villa Varellia — a private beachfront estate in Kallithea, Halkidiki." },
     ],
   }),
 });
