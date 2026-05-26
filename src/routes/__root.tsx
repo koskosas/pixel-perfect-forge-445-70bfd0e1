@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Villa Varellia" },
+      { name: "description", content: "Villa Solaris Demo is a website showcasing a villa, featuring property details, reviews, and a gallery." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Villa Varellia" },
+      { property: "og:description", content: "Villa Solaris Demo is a website showcasing a villa, featuring property details, reviews, and a gallery." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Villa Varellia" },
+      { name: "twitter:description", content: "Villa Solaris Demo is a website showcasing a villa, featuring property details, reviews, and a gallery." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9afc3778-8462-4dc8-b404-14e7b9ed1f03/id-preview-9e54a9e2--35555ef7-57c9-4229-818f-c1da8ee0d0f7.lovable.app-1779801609431.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9afc3778-8462-4dc8-b404-14e7b9ed1f03/id-preview-9e54a9e2--35555ef7-57c9-4229-818f-c1da8ee0d0f7.lovable.app-1779801609431.png" },
     ],
     links: [
       {
