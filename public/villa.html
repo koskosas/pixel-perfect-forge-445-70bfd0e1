@@ -137,7 +137,7 @@ img{display:block;width:100%;height:100%;object-fit:cover}
 /* ── STORY DESKTOP: sticky horizontal ── */
 .story-sticky-wrap{display:none}
 @media(min-width:1024px){
-  .story-sticky-wrap{display:block;height:400vh;position:relative}
+  .story-sticky-wrap{display:block;height:500vh;position:relative}
   .story-sticky-inner{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:stretch}
   .story-track-h{display:flex;will-change:transform}
   .story-panel-h{flex-shrink:0;width:100vw;height:100vh;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
@@ -904,7 +904,7 @@ hdots.forEach((d,i)=>d.addEventListener('click',()=>goHero(i)));
 /* ── MOBILE STORY SWIPE + AUTO-ADVANCE ── */
 const storyStack=document.getElementById('storyStack');
 const storyDots=document.querySelectorAll('.smd');
-const totalCards=4;
+const totalCards=5;
 
 function goStory(idx){
   storyStack.scrollTo({left:idx*storyStack.offsetWidth,behavior:'smooth'});
@@ -942,8 +942,8 @@ if(storyOuter&&window.innerWidth>=1024){
   function updateStory(){
     const rect=storyOuter.getBoundingClientRect();
     const prog=Math.max(0,Math.min(1,-rect.top/(storyOuter.offsetHeight-innerHeight)));
-    trackH.style.transform=`translateX(${-prog*3*innerWidth}px)`;
-    const idx=Math.round(prog*3);
+    trackH.style.transform=`translateX(${-prog*4*innerWidth}px)`;
+    const idx=Math.round(prog*4);
     sphDots.forEach((d,i)=>d.classList.toggle('active',i===idx));
   }
   addEventListener('scroll',updateStory,{passive:true});
